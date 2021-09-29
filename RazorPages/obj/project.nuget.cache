@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "pfRXzuzrs8urxc1H4Nohgo+RkmmjoUbQtvSD9SR5/SHT3dsRQ2Tn2Z1sZP4udyNDi0TKRO443eKYaPnTdLMtxA==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\RazorPages.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ecr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
