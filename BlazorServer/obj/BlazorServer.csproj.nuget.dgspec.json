@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\API\\API.csproj": {}
+    "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorServer\\BlazorServer.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\API\\API.csproj": {
+    "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorServer\\BlazorServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\API\\API.csproj",
-        "projectName": "API",
-        "projectPath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorServer\\BlazorServer.csproj",
+        "projectName": "BlazorServer",
+        "projectPath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorServer\\BlazorServer.csproj",
         "packagesPath": "C:\\Users\\ecr\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\API\\obj\\",
+        "outputPath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -45,12 +45,6 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "dependencies": {
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[5.6.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
