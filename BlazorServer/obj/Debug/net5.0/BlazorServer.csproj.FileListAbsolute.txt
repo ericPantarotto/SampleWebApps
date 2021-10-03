@@ -56,3 +56,4 @@ C:\Users\ecr\vscode_sources\SampleWebApps\BlazorServer\obj\Debug\net5.0\ref\Blaz
 C:\Users\ecr\vscode_sources\SampleWebApps\BlazorServer\obj\Debug\net5.0\BlazorServer.pdb
 C:\Users\ecr\vscode_sources\SampleWebApps\BlazorServer\obj\Debug\net5.0\BlazorServer.genruntimeconfig.cache
 C:\Users\ecr\vscode_sources\SampleWebApps\BlazorServer\obj\Debug\net5.0\BlazorServer.csproj.CopyComplete
+C:\Users\ecr\vscode_sources\SampleWebApps\BlazorServer\obj\Debug\net5.0\Razor\Pages\Test.cshtml.g.cs
