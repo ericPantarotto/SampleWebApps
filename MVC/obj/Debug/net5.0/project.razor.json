@@ -15639,6 +15639,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\MVC\\Pages\\Test.cshtml",
+      "TargetPath": "Pages\\Test.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\MVC\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
