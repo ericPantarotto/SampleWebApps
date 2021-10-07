@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "RXpkM2BCnnzauy3ZIjziECTAzg+fMfAAqLczqVACCGDk32PTCDFiTzmEyp9gXsqSMR7Br3ExZwiHq6xcXE4JQw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RPDemo\\RPDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ecr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
