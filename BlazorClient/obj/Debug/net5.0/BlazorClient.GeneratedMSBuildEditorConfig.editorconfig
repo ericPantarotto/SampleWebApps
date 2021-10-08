@@ -10,4 +10,4 @@ build_property.EnableSingleFileAnalyzer =
 build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = BlazorClient
-build_property.ProjectDir = c:\Users\ecr\vscode_sources\SampleWebApps\BlazorClient\
+build_property.ProjectDir = C:\Users\ecr\source\GettingStartedASPNetCore\BlazorClient\

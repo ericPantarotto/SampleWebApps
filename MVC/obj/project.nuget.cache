@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cEZt6xqQozPR9XiJ1eihIPLi+nBuFEIWRsWiwhwJyL+TsVrQKs6HSyoBHn0s6phVni8ltY9SnLRtW0fB2OqZ9g==",
+  "dgSpecHash": "EBUfW9I2CtFG87krzZ0KjVjxy2sV0ONol50nRBz3e/xdn86AO2+MGBDz1+WcmGwdgHSnDfLjau625b3x+m+3Iw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\MVC\\MVC.csproj",
+  "projectFilePath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
   ],

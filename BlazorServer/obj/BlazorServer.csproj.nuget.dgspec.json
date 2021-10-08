@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorServer\\BlazorServer.csproj": {}
+    "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorServer\\BlazorServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorServer\\BlazorServer.csproj": {
+    "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorServer\\BlazorServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorServer\\BlazorServer.csproj",
+        "projectUniqueName": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorServer\\BlazorServer.csproj",
         "projectName": "BlazorServer",
-        "projectPath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorServer\\BlazorServer.csproj",
+        "projectPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorServer\\BlazorServer.csproj",
         "packagesPath": "C:\\Users\\ecr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorServer\\obj\\",
+        "outputPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -27,6 +27,7 @@
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://pkgs.dev.azure.com/mdoeric/DockerTools/_packaging/DemoFeed/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/mdoeric/GettingStartingASPNetCoreLibrary/_packaging/GSAspNetCoreFeed/nuget/v3/index.json": {},
           "https://pkgs.dev.azure.com/mdoeric/NuGetDemo/_packaging/DemoFeedNuget/nuget/v3/index.json": {},
           "https://www.myget.org/F/caliburn-micro-builds/api/v3/index.json": {}
         },

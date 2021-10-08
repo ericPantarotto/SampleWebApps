@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IBspc5sZ8Mw6HtMetrHtvof0gR32UdFD/rhs3norggsWx2nS7RCNl4bFarqIR1xqtVRo/BZXZ3X5JoxLXSDzNg==",
+  "dgSpecHash": "oixbID9eIi+IXNEg4kfanxtpS7wOWUcSVTEkkfd8/isjVmJh+xH2nETiFbm27jD1NWw9qiOT01NL6mHdwPPFAw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorClient\\BlazorClient.csproj",
+  "projectFilePath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorClient\\BlazorClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.10\\microsoft.aspnetcore.authorization.5.0.10.nupkg.sha512",
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.10\\microsoft.aspnetcore.components.5.0.10.nupkg.sha512",

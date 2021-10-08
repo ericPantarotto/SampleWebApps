@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pfRXzuzrs8urxc1H4Nohgo+RkmmjoUbQtvSD9SR5/SHT3dsRQ2Tn2Z1sZP4udyNDi0TKRO443eKYaPnTdLMtxA==",
+  "dgSpecHash": "6YHSbQEryLnggIrWZMScdLr3aA+bxLLdqUy4vAI19aJ9SwAi64OmQRJ/GO+1+YoQP9WOfGxajDDQnm1z7sQ6dA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\RazorPages.csproj",
+  "projectFilePath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ecr\\.nuget\\packages\\datalibraryrepo\\1.0.2\\datalibraryrepo.1.0.2.nupkg.sha512",
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
   ],
   "logs": []
