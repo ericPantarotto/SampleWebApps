@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "RazorPages/1.0.0": {
         "dependencies": {
+          "DataLibraryRepo": "1.0.2",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -322,6 +323,17 @@
         },
         "compile": {
           "RazorPages.dll": {}
+        }
+      },
+      "DataLibraryRepo/1.0.2": {
+        "runtime": {
+          "lib/netcoreapp3.1/DataLibraryRepo.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/DataLibraryRepo.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
@@ -2029,6 +2041,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "DataLibraryRepo/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-T8ubt70CVGbcqxIN8YeX7ZVODrpJFziLlDm/4OjOn2qpdRNhrEZUQ2ydRW3c5O5dJKbkKVmaWAkGbUOQf8Tzlw==",
+      "path": "datalibraryrepo/1.0.2",
+      "hashPath": "datalibraryrepo.1.0.2.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",
