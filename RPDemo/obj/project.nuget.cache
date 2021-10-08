@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r1lR/h+NWQM7TIYRlGJS6ykVBysImzhOw2W66gks7jOcxlVXAw5azc/DPEZZgfHk6XZXGLgrkaxPz8dX6FK5iQ==",
+  "dgSpecHash": "Qy5D1n61nrsV8gByWyDsl7TE5YUBoz0+HHeS0rsGBkbzZqbzd0+O8KRdpCeFTvTjF6cY5FiG7kv7D+Ybhy0Lzw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj",
+  "projectFilePath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
   ],
