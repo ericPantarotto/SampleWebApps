@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\RazorPages.csproj",
+  "FilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15619,38 +15619,38 @@
   "RootNamespace": "RazorPages",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\Pages\\_ViewStart.cshtml",
-      "TargetPath": "Pages\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\Pages\\Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\Pages\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\Pages\\Index.cshtml",
-      "TargetPath": "Pages\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\Pages\\Privacy.cshtml",
+      "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     }
   ],

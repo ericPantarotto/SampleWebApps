@@ -1,11 +1,35 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "DataLibraryRepo/1.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/DataLibraryRepo.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/DataLibraryRepo.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DataLibraryRepo/1.0.2": {
+      "sha512": "T8ubt70CVGbcqxIN8YeX7ZVODrpJFziLlDm/4OjOn2qpdRNhrEZUQ2ydRW3c5O5dJKbkKVmaWAkGbUOQf8Tzlw==",
+      "type": "package",
+      "path": "datalibraryrepo/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        "datalibraryrepo.1.0.2.nupkg.sha512",
+        "datalibraryrepo.nuspec",
+        "lib/netcoreapp3.1/DataLibraryRepo.dll"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "DataLibraryRepo >= 1.0.2"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ecr\\.nuget\\packages\\": {},
@@ -14,11 +38,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\RazorPages.csproj",
+      "projectUniqueName": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj",
       "projectName": "RazorPages",
-      "projectPath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\RazorPages.csproj",
+      "projectPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj",
       "packagesPath": "C:\\Users\\ecr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\RazorPages\\obj\\",
+      "outputPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -34,6 +58,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://pkgs.dev.azure.com/mdoeric/DockerTools/_packaging/DemoFeed/nuget/v3/index.json": {},
+        "https://pkgs.dev.azure.com/mdoeric/GettingStartingASPNetCoreLibrary/_packaging/GSAspNetCoreFeed/nuget/v3/index.json": {},
         "https://pkgs.dev.azure.com/mdoeric/NuGetDemo/_packaging/DemoFeedNuget/nuget/v3/index.json": {},
         "https://www.myget.org/F/caliburn-micro-builds/api/v3/index.json": {}
       },
@@ -52,6 +77,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "DataLibraryRepo": {
+            "target": "Package",
+            "version": "[1.0.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
