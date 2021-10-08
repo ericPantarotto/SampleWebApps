@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Qy5D1n61nrsV8gByWyDsl7TE5YUBoz0+HHeS0rsGBkbzZqbzd0+O8KRdpCeFTvTjF6cY5FiG7kv7D+Ybhy0Lzw==",
+  "dgSpecHash": "1TUJQXl/GijgKVlI+tYzHj76MPYfAuFxQtC1YD+u0Wb9v7c4Oxuo7n5dqYBDAIFmKm60JQL0MgKtTJ2ELKBUjQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ecr\\.nuget\\packages\\datalibraryrepo\\1.0.2\\datalibraryrepo.1.0.2.nupkg.sha512",
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
   ],
   "logs": []

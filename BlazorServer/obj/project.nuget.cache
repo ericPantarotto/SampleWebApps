@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LtZX8RYffK+vJ4m81o3FUrUeGmml9vGcKfio8RYCXhOgxTaoqA52HkALEfQ4HWgwsB6uGWute0j9cyrFFrEYmw==",
+  "dgSpecHash": "VFVqhpXZvFX5E5iskZuls1Eg5AMMgSyiGiyZoOFHQ3dgB4vzQw3IaooaP06xIDsAopNO4Erej96FGsb6S1OApA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\BlazorServer\\BlazorServer.csproj",
+  "projectFilePath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorServer\\BlazorServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
   ],

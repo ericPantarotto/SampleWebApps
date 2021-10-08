@@ -199,11 +199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\API\\API.csproj",
+      "projectPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\API\\API.csproj",
       "packagesPath": "C:\\Users\\ecr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ecr\\vscode_sources\\SampleWebApps\\API\\obj\\",
+      "outputPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -219,6 +219,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://pkgs.dev.azure.com/mdoeric/DockerTools/_packaging/DemoFeed/nuget/v3/index.json": {},
+        "https://pkgs.dev.azure.com/mdoeric/GettingStartingASPNetCoreLibrary/_packaging/GSAspNetCoreFeed/nuget/v3/index.json": {},
         "https://pkgs.dev.azure.com/mdoeric/NuGetDemo/_packaging/DemoFeedNuget/nuget/v3/index.json": {},
         "https://www.myget.org/F/caliburn-micro-builds/api/v3/index.json": {}
       },
