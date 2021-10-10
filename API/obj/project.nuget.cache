@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kg3+AMMLzDc/0a5Eamn2w4ADeB9EQI1tfww680XpPoMiOFZ1Duxf2LpmZzRRL/65GR6XmNbkg2MAl7DHt9aoDQ==",
+  "dgSpecHash": "VKkHxyhtwhJEpSTyI0QJDsPaKmMYw3ePfzJ5x3NypYz5M9I9o0k8pX/63WWMWBBRJacKQZx9Z5rEZ32nEnxt8Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\API\\API.csproj",
+  "projectFilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

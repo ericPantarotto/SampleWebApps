@@ -38,7 +38,7 @@
           "lib/netstandard2.0/Azure.Identity.dll": {}
         }
       },
-      "DataLibraryRepo/1.0.2": {
+      "DataLibraryRepo/1.0.8": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/DataLibraryRepo.dll": {}
@@ -1010,13 +1010,13 @@
         "pkgicon.png"
       ]
     },
-    "DataLibraryRepo/1.0.2": {
-      "sha512": "T8ubt70CVGbcqxIN8YeX7ZVODrpJFziLlDm/4OjOn2qpdRNhrEZUQ2ydRW3c5O5dJKbkKVmaWAkGbUOQf8Tzlw==",
+    "DataLibraryRepo/1.0.8": {
+      "sha512": "a5H29wEhZWQpQPTBGgmB82UxgqN8/zoK/cwwMOBGsnF5Sop9lh96leCD9cfIL/QFBnv5QwRqmylkE11B5lImAA==",
       "type": "package",
-      "path": "datalibraryrepo/1.0.2",
+      "path": "datalibraryrepo/1.0.8",
       "files": [
         ".nupkg.metadata",
-        "datalibraryrepo.1.0.2.nupkg.sha512",
+        "datalibraryrepo.1.0.8.nupkg.sha512",
         "datalibraryrepo.nuspec",
         "lib/netcoreapp3.1/DataLibraryRepo.dll"
       ]
@@ -4027,7 +4027,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "DataLibraryRepo >= 1.0.2",
+      "DataLibraryRepo >= 1.0.8",
       "Microsoft.Data.SqlClient >= 3.0.1",
       "Microsoft.Extensions.Configuration >= 5.0.0",
       "RepoDb >= 1.12.9",
@@ -4084,7 +4084,7 @@
         "dependencies": {
           "DataLibraryRepo": {
             "target": "Package",
-            "version": "[1.0.2, )"
+            "version": "[1.0.8, )"
           },
           "Microsoft.Data.SqlClient": {
             "target": "Package",

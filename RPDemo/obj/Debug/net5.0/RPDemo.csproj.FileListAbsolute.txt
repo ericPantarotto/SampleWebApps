@@ -110,3 +110,4 @@ C:\Users\ecr\source\GettingStartedASPNetCore\RPDemo\bin\Debug\net5.0\runtimes\un
 C:\Users\ecr\source\GettingStartedASPNetCore\RPDemo\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\ecr\source\GettingStartedASPNetCore\RPDemo\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\ecr\source\GettingStartedASPNetCore\RPDemo\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ecr\source\GettingStartedASPNetCore\RPDemo\obj\Debug\net5.0\RPDemo.csproj.AssemblyReference.cache

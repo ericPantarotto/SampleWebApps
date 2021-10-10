@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorClient\\BlazorClient.csproj": {}
+    "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorClient\\BlazorClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorClient\\BlazorClient.csproj": {
+    "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorClient\\BlazorClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorClient\\BlazorClient.csproj",
+        "projectUniqueName": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorClient\\BlazorClient.csproj",
         "projectName": "BlazorClient",
-        "projectPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorClient\\BlazorClient.csproj",
+        "projectPath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorClient\\BlazorClient.csproj",
         "packagesPath": "C:\\Users\\ecr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorClient\\obj\\",
+        "outputPath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\BlazorClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

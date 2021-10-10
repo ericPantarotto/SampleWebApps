@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EBUfW9I2CtFG87krzZ0KjVjxy2sV0ONol50nRBz3e/xdn86AO2+MGBDz1+WcmGwdgHSnDfLjau625b3x+m+3Iw==",
+  "dgSpecHash": "ByVa37B/j0dywQbLoyODS4rQunxKv4o+O0RXlaXVTowA1UZ4MOnY/NjP1Gh2CVcLGijPQ7y6zBtLHR8U6Pa5ZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\MVC.csproj",
+  "projectFilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\MVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.9\\microsoft.netcore.app.host.win-x64.5.0.9.nupkg.sha512"
   ],

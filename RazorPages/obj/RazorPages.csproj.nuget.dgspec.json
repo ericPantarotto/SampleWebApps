@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj": {}
+    "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj": {
+    "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj",
+        "projectUniqueName": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj",
         "projectName": "RazorPages",
-        "projectPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj",
+        "projectPath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\RazorPages.csproj",
         "packagesPath": "C:\\Users\\ecr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\obj\\",
+        "outputPath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RazorPages\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

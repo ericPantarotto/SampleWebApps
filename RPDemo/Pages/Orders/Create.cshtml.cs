@@ -33,5 +33,21 @@ namespace RPDemo.Pages.Orders
                 FoodItems.Add(new SelectListItem { Value = x.Id.ToString(), Text = x.Title });
             });
         }
+
+        public IActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            //var food = _foodData.GetFoodById();
+
+            //_foodData.GetFoodById
+            //var test = _foodData.GetFoodById(Order.FoodId);
+            // _orderData.CreateOrder(Order);
+
+            return RedirectToPage("./Create");
+        }
     }
 }

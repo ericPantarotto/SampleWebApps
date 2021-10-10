@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+EdSLzmuEzP/HAE90OUn1AwjgmsdasbzrehfQ3ZFnSnWueAtYvxl3Ch2Fz7HYg5SqM1Q3LZiu1lvhZl9iQxmiw==",
+  "dgSpecHash": "X7HoOaZJqBOSKfKG5EXd5PDg7pdhC7fHvNMbaoVvfLtuIfwC8ERqKBj+BF4wfz3OVpM+PyMxh1XvQZJUq2xZPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj",
+  "projectFilePath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ecr\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\ecr\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",
-    "C:\\Users\\ecr\\.nuget\\packages\\datalibraryrepo\\1.0.2\\datalibraryrepo.1.0.2.nupkg.sha512",
+    "C:\\Users\\ecr\\.nuget\\packages\\datalibraryrepo\\1.0.8\\datalibraryrepo.1.0.8.nupkg.sha512",
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ecr\\.nuget\\packages\\microsoft.data.sqlclient\\3.0.1\\microsoft.data.sqlclient.3.0.1.nupkg.sha512",

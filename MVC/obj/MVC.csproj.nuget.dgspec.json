@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\MVC.csproj": {}
+    "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\MVC.csproj": {
+    "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\MVC.csproj",
+        "projectUniqueName": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\MVC.csproj",
         "projectName": "MVC",
-        "projectPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\MVC.csproj",
+        "projectPath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\MVC.csproj",
         "packagesPath": "C:\\Users\\ecr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\obj\\",
+        "outputPath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\MVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

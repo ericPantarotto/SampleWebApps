@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj": {}
+    "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj": {
+    "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj",
+        "projectUniqueName": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj",
         "projectName": "RPDemo",
-        "projectPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj",
+        "projectPath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\RPDemo.csproj",
         "packagesPath": "C:\\Users\\ecr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\obj\\",
+        "outputPath": "c:\\Users\\ecr\\source\\GettingStartedASPNetCore\\RPDemo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -49,7 +49,7 @@
           "dependencies": {
             "DataLibraryRepo": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[1.0.8, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
