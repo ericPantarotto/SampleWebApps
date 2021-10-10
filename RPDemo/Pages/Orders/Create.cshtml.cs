@@ -41,11 +41,9 @@ namespace RPDemo.Pages.Orders
                 return Page();
             }
 
-            //var food = _foodData.GetFoodById();
+            Order.Total = Order.Quantity * _foodData.GetFoodById(Order.FoodId).Price;
 
-            //_foodData.GetFoodById
-            //var test = _foodData.GetFoodById(Order.FoodId);
-            // _orderData.CreateOrder(Order);
+            _orderData.CreateOrder(Order);
 
             return RedirectToPage("./Create");
         }
