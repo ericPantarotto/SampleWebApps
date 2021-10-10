@@ -1,27 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPDemo", "RPDemo\RPDemo.csproj", "{D99EF6B9-4DC3-477F-9027-93351C0E1397}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RPDemo", "RPDemo\RPDemo.csproj", "{D99EF6B9-4DC3-477F-9027-93351C0E1397}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{1A48C5F5-79C7-4188-B1B7-9295C9BEF400}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{1A48C5F5-79C7-4188-B1B7-9295C9BEF400}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorClient", "BlazorClient\BlazorClient.csproj", "{C0339A7C-D5C6-4E50-8DF7-F863C077DB6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorClient", "BlazorClient\BlazorClient.csproj", "{C0339A7C-D5C6-4E50-8DF7-F863C077DB6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServer", "BlazorServer\BlazorServer.csproj", "{0DACC73D-BC28-460A-BD5E-30552ACA1907}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServer", "BlazorServer\BlazorServer.csproj", "{0DACC73D-BC28-460A-BD5E-30552ACA1907}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "MVC\MVC.csproj", "{B68977D2-D65B-43AA-8DB2-AF107235D587}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC", "MVC\MVC.csproj", "{B68977D2-D65B-43AA-8DB2-AF107235D587}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPages", "RazorPages\RazorPages.csproj", "{F5B36336-93BE-4131-A679-EFF6CDA061AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPages", "RazorPages\RazorPages.csproj", "{F5B36336-93BE-4131-A679-EFF6CDA061AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D99EF6B9-4DC3-477F-9027-93351C0E1397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -48,5 +45,11 @@ Global
 		{F5B36336-93BE-4131-A679-EFF6CDA061AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5B36336-93BE-4131-A679-EFF6CDA061AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5B36336-93BE-4131-A679-EFF6CDA061AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D6DC76D-546A-4607-A683-2CA24C8FD633}
 	EndGlobalSection
 EndGlobal

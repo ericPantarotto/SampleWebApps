@@ -50,6 +50,26 @@
             "DataLibraryRepo": {
               "target": "Package",
               "version": "[1.0.2, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "RepoDb": {
+              "target": "Package",
+              "version": "[1.12.9, )"
+            },
+            "RepoDb.SqlServer": {
+              "target": "Package",
+              "version": "[1.1.4, )"
+            },
+            "RepoDb.SqlServer.BulkOperations": {
+              "target": "Package",
+              "version": "[1.1.5, )"
             }
           },
           "imports": [
