@@ -5,7 +5,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DataLibraryRepo" Version="1.0.2" />
+    <PackageReference Include="DataLibraryRepo" Version="1.0.9" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.0" />
+    <PackageReference Include="RepoDb" Version="1.12.9" />
+    <PackageReference Include="RepoDb.SqlServer" Version="1.1.4" />
+    <PackageReference Include="RepoDb.SqlServer.BulkOperations" Version="1.1.5" />
   </ItemGroup>
 
 </Project>
