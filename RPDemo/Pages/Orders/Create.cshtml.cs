@@ -43,9 +43,9 @@ namespace RPDemo.Pages.Orders
 
             Order.Total = Order.Quantity * _foodData.GetFoodById(Order.FoodId).Price;
 
-            _orderData.CreateOrder(Order);
+            int id = _orderData.CreateOrder(Order);
 
-            return RedirectToPage("./Create");
+            return RedirectToPage("./Display", new { Id = id});
         }
     }
 }
