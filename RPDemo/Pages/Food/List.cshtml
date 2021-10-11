@@ -16,7 +16,8 @@
             <tr>
                 <td>@food.Title</td>
                 <td>@food.Description</td>
-                <td>@string.Format("{0,C}",food.Price)</td>
+                <td>@food.Price.ToString("C")</td>
+                @* <td>$"{@food.Price:C}"</td> *@
             </tr>
         }
     </tbody>
