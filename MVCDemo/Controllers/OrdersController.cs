@@ -81,5 +81,19 @@ namespace MVCDemo.Controllers
 
             return RedirectToAction("Display", new {id});
         }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var order = _orderData.GetOrderById(id);
+            return View(order);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(OrderModel order)
+        {
+            _orderData.DeleteOrder(order.Id);
+            return RedirectToAction("Create");
+        }
     }
 }
