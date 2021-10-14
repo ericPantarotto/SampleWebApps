@@ -70,5 +70,16 @@ namespace MVCDemo.Controllers
 
             return View(_orderDisplayModel);
         }
+
+        [HttpPost]
+        public IActionResult Update(int id, string orderName )
+        {
+            var modelForUpdate = _orderData.GetOrderById(id);
+            modelForUpdate.OrderName = orderName;
+
+            _orderData.UpdateOrderName(modelForUpdate);
+
+            return RedirectToAction("Display", new {id});
+        }
     }
 }
