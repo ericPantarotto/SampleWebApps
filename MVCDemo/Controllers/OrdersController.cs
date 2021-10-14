@@ -12,11 +12,18 @@ namespace MVCDemo.Controllers
     {
         private readonly IFoodData _foodData;
         private readonly IOrderData _orderData;
+        private readonly IOrderCreateModel _orderCreateModel;
+        private readonly IOrderDisplayModel _orderDisplayModel;
 
-        public OrdersController(IFoodData foodData, IOrderData orderData)
+        public OrdersController(IFoodData foodData,
+                                IOrderData orderData,
+                                IOrderCreateModel orderCreateModel,
+                                IOrderDisplayModel orderDisplayModel)
         {
             _foodData = foodData;
             _orderData = orderData;
+            _orderCreateModel = orderCreateModel;
+            _orderDisplayModel = orderDisplayModel;
         }
 
         public IActionResult Index()
@@ -29,14 +36,12 @@ namespace MVCDemo.Controllers
         {
             var food = _foodData.GetFood();
 
-            OrderCreateModel model = new OrderCreateModel();
-
             food.ForEach(x =>
             {
-                model.FoodItems.Add(new SelectListItem { Value = x.Id.ToString(), Text = x.Title });
+                _orderCreateModel.FoodItems.Add(new SelectListItem { Value = x.Id.ToString(), Text = x.Title });
             });
 
-            return View(model);
+            return View(_orderCreateModel);
         }
 
         [HttpPost]
@@ -51,9 +56,19 @@ namespace MVCDemo.Controllers
 
             int id = _orderData.CreateOrder(order);
 
-            return RedirectToAction("Create");
-            // return RedirectToPage("./Display", new { Id = id});
+            return RedirectToAction("Display", new {id});
         }
-      
+
+        public IActionResult Display(int id)
+        {
+            _orderDisplayModel.Order = _orderData.GetOrderById(id);
+
+            if (_orderDisplayModel.Order is not null)
+            {
+                _orderDisplayModel.ItemPurchased = _foodData.GetFoodById(_orderDisplayModel.Order.FoodId)?.Title;
+            }
+
+            return View(_orderDisplayModel);
+        }
     }
 }

@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using DataLibraryRepo.Data;
 using BillTimeLibrary.RepoDB;
+using MVCDemo.Models;
 
 namespace MVCDemo
 {
@@ -29,6 +30,8 @@ namespace MVCDemo
 
             services.AddSingleton<IFoodData, FoodData>();
             services.AddSingleton<IOrderData, OrderData>();
+            services.AddTransient<IOrderDisplayModel, OrderDisplayModel>();
+            services.AddTransient<IOrderCreateModel, OrderCreateModel>();
 
             new ModelMapper().ModelMap();
         }
