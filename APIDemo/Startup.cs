@@ -32,6 +32,9 @@ namespace APIDemo
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "APIDemo", Version = "v1" });
             });
+
+            services.AddSingleton<IFoodData, FoodData>();
+            services.AddSingleton<IOrderData, OrderData>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
