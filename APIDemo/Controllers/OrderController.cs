@@ -35,5 +35,34 @@ namespace APIDemo.Controllers
 
             return Ok(new {Id = id});
         }
+
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult Get(int id)
+        {
+            if (id == 0)
+            {
+                return BadRequest();
+            }
+
+            var order = _orderData.GetOrderById(id);
+            if (order is not null)
+            {
+                var food = _foodData.GetFood();
+                var output = new
+                {
+                    Order = order,
+                    ItemPurchased = _foodData.GetFoodById(order.FoodId)?.Title
+                };
+                return Ok(output);
+            }else
+            {
+                return NotFound(new {Id = id});
+            }
+        }
+
+
     }
 }
