@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BillTimeLibrary.RepoDB;
+using DataLibraryRepo.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -35,6 +37,8 @@ namespace APIDemo
 
             services.AddSingleton<IFoodData, FoodData>();
             services.AddSingleton<IOrderData, OrderData>();
+
+            new ModelMapper().ModelMap();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
