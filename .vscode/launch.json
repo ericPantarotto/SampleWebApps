@@ -90,7 +90,7 @@
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/APIDemo/bin/Debug/net5.0/APIDemo.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/MVCDemo",
+            "cwd": "${workspaceFolder}/APIDemo",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
