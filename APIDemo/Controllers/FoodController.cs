@@ -12,7 +12,6 @@ namespace APIDemo.Controllers
     public class FoodController : ControllerBase
     {
         private readonly IFoodData _foodData;
-        private readonly IOrderData _orderData;
 
         public FoodController(IFoodData foodData)
         {
