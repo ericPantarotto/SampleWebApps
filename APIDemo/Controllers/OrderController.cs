@@ -7,6 +7,7 @@ using DataLibraryRepo.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using APIDemo.Models;
 
 namespace APIDemo.Controllers
 {
@@ -63,6 +64,18 @@ namespace APIDemo.Controllers
             }
         }
 
+
+        [HttpPut]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public IActionResult Put([FromBody] OrderUpdateModel data)
+        {
+            var modelForUpdate = _orderData.GetOrderById(data.Id);
+            modelForUpdate.OrderName = data.OrderName;
+            _orderData.UpdateOrderName(modelForUpdate);
+
+            return Ok();
+        }
 
     }
 }
