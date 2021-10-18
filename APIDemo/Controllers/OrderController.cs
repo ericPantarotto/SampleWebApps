@@ -66,10 +66,12 @@ namespace APIDemo.Controllers
 
 
         [HttpPut]
+        [ValidateModel]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult Put([FromBody] OrderUpdateModel data)
         {
+            
             var modelForUpdate = _orderData.GetOrderById(data.Id);
             modelForUpdate.OrderName = data.OrderName;
             _orderData.UpdateOrderName(modelForUpdate);
@@ -77,5 +79,12 @@ namespace APIDemo.Controllers
             return Ok();
         }
 
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+         public IActionResult Delete(int id )
+         {
+             _orderData.DeleteOrder(id);
+             return Ok();
+         }
     }
 }
