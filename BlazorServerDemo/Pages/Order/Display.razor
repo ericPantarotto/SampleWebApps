@@ -1,6 +1,7 @@
 ﻿@page "/Order/Display/{Id:int}"
 @inject IFoodData foodData
 @inject IOrderData orderData
+@using BlazorServerDemo.Models
 
 <h3>Display</h3>
 @if (order is null)
@@ -37,19 +38,19 @@
             </tr> *@
         </tbody>
     </table>
-
-    <form method="post">
-        @* <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <input asp-for="UpdateModel.Id" value="@Model.Order.Id" type="hidden"/>
+    <EditForm Model="@updateModel" OnValidSubmit="HandleValidSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary Model="@updateModel" />
+           
+       <div class="form-group">
+            <label class="control-label" >Name for the Order</label>
+            <InputText @bind-Value="updateModel.OrderName" class="form-control"/>
+            <ValidationMessage For="@(()=> updateModel.OrderName)" class="text-danger"/>
+       </div>
         <div class="form-group">
-            <label asp-for="UpdateModel.OrderName" class="control-label" style="font-weight: bold"                                                                                              ></label>
-            <input asp-for="UpdateModel.OrderName" value="@Model.Order.OrderName" class="form-control"/>
-            <span asp-validation-for="UpdateModel.OrderName" class="text-danger"></span>
+            <input type="submit" class="btn btn-primary" value="Update Order Name"/>
         </div>
-        <div class="form-group">
-            <input type="submit" value="Update Order Name" class="btn btn-primary"/>    
-        </div> *@
-    </form>
+    </EditForm>
 }
 
 
@@ -58,7 +59,7 @@
     public int Id { get; set; }
     private OrderModel order;
     public string itemPurchased;
-
+    private OrderUpdateModel updateModel = new OrderUpdateModel();
     protected override void OnInitialized()
     {
         base.OnInitialized();
@@ -67,8 +68,16 @@
         if (order is not null)
         {
             itemPurchased = foodData.GetFoodById(order.FoodId)?.Title;
-        }
 
+            updateModel.Id = order.Id;
+            updateModel.OrderName = order.OrderName;
+        }
+    }
+    private void HandleValidSubmit()
+    {
+            order.OrderName = updateModel.OrderName;
+
+            orderData.UpdateOrderName(order); 
     }
 
 }
