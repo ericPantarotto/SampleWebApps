@@ -1,6 +1,7 @@
 ﻿@page "/Order/Create"
 @inject IFoodData foodData
 @inject IOrderData orderData
+@inject NavigationManager NavigationManager
 
 <h3>Create</h3>
 
@@ -51,6 +52,8 @@
         int id = orderData.CreateOrder(order);
 
         order = new OrderModel();
+
+        NavigationManager.NavigateTo($"order/display/{id}");    
     }
     private void FoodItemChange(ChangeEventArgs e)
     {
