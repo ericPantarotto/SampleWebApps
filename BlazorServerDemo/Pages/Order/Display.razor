@@ -1,12 +1,16 @@
 ﻿@page "/Order/Display/{Id:int}"
 @inject IFoodData foodData
 @inject IOrderData orderData
+@inject NavigationManager navigationManager
 @using BlazorServerDemo.Models
 
 <h3>Display</h3>
-@if (order is null)
+@if (recordNotFound)
 {
- <h4>Record Loading..</h4>   
+ <h4>No Record Found</h4>   
+}else if (order is null)
+{
+ <h4>Record Loading...</h4>   
 }else
 {
     <table class="table">
@@ -31,11 +35,24 @@
                 <td><strong>Quantity</strong></td>
                 <td>@order.Quantity</td>
             </tr>
-            @* <tr>
+            <tr>
                 <td colspan="2">
-                    <a asp-page="./Delete" asp-route-id="@Model.Order.Id" class="btn btn-danger">Delete Order</a>
+                    @if (confirmDelete)
+                    {
+                        <button class="btn btn-outline-danger" @onclick="HandleDeleteRecord">
+                            Confirm Order
+                        </button>
+                        <button class="btn btn-secondary" @onclick="(() => confirmDelete = false)">
+                            Cancel
+                        </button>
+                    }else
+                    {
+                        <button class="btn btn-danger" @onclick="(() => confirmDelete = true)">
+                            Delete Order
+                        </button>
+                    } 
                 </td>
-            </tr> *@
+            </tr>
         </tbody>
     </table>
     <EditForm Model="@updateModel" OnValidSubmit="HandleValidSubmit">
@@ -60,6 +77,8 @@
     private OrderModel order;
     public string itemPurchased;
     private OrderUpdateModel updateModel = new OrderUpdateModel();
+    private bool confirmDelete = false;
+    private bool recordNotFound;
     protected override void OnInitialized()
     {
         base.OnInitialized();
@@ -71,6 +90,9 @@
 
             updateModel.Id = order.Id;
             updateModel.OrderName = order.OrderName;
+        }else
+        {
+            recordNotFound = true;
         }
     }
     private void HandleValidSubmit()
@@ -79,5 +101,9 @@
 
             orderData.UpdateOrderName(order); 
     }
-
+    private void HandleDeleteRecord()
+    {
+        orderData.DeleteOrder(Id); 
+        navigationManager.NavigateTo("food/list");
+    }
 }
