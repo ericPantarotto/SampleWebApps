@@ -1,0 +1,42 @@
+﻿@page "/Food/List"
+@inject IFoodData foodData
+
+<h3>List</h3>
+@if (Food is null)
+{
+     <h4>Record Loading..</h4>   
+}else
+{
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var food in Food)
+            {
+                <tr>
+                    <td>@food.Title</td>
+                    <td>@food.Description</td>
+                    <td>@food.Price.ToString("C")</td>
+                    @* <td>$"{@food.Price:C}"</td> *@
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+
+@code {
+
+    public List<FoodModel> Food { get; set; }
+    
+    protected override void OnInitialized()
+    {
+        Food = new List<FoodModel>();
+        Food = foodData.GetFood();
+    }
+}
