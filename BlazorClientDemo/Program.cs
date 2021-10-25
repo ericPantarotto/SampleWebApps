@@ -19,7 +19,7 @@ namespace BlazorClientDemo
 
             builder.Services.AddScoped(sp => new HttpClient 
             { 
-                BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) 
+                BaseAddress = new Uri("https://apidemo20211025110359.azurewebsites.net/") 
             });
 
             await builder.Build().RunAsync();
