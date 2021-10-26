@@ -51,7 +51,7 @@ else
     {
         base.OnParametersSet();
         
-        var foodItemsDirect = Http.GetFromJsonAsync<List<FoodModel>>("api/food");
+        @* var foodItemsDirect = Http.GetFromJsonAsync<List<FoodModel>>("api/food"); *@
 
         HttpResponseMessage response = await Http.GetAsync("api/food");
         if (response.IsSuccessStatusCode)
