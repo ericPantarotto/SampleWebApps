@@ -73,7 +73,7 @@ else
             var contents = await response.Content.ReadFromJsonAsync<OrderCreateResultModel>();
             
             order = new OrderModel();
-            @* NavigationManager.NavigateTo($"order/display/{contents.Id}"); *@
+            NavigationManager.NavigateTo($"order/display/{contents.Id}");
         }
         catch (Exception ex)
         {
