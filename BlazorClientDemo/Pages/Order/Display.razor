@@ -36,12 +36,12 @@ else
                 <td><strong>Quantity</strong></td>
                 <td>@orderInfo.Order.Quantity</td>
             </tr>
-            @* <tr>
+            <tr>
                 <td colspan="2">
                     @if (confirmDelete)
                     {
                         <button class="btn btn-outline-danger" @onclick="HandleDeleteRecord">
-                            Confirm Order
+                            Confirm Delete
                         </button>
                         <button class="btn btn-secondary" @onclick="(() => confirmDelete = false)">
                             Cancel
@@ -53,7 +53,7 @@ else
                         </button>
                     } 
                 </td>
-            </tr> *@
+            </tr>
         </tbody>
     </table>
     <EditForm Model="@updateModel" OnValidSubmit="HandleValidSubmit">
@@ -77,7 +77,7 @@ else
     private OrderResultModel orderInfo = new OrderResultModel();
     private OrderUpdateModel updateModel = new OrderUpdateModel();
     private string errorString; 
-
+    private bool confirmDelete = false;
     protected override async Task OnInitializedAsync()
     {
         base.OnInitialized();
@@ -106,5 +106,21 @@ else
        {
            errorString = ex.Message;
        }
+    }
+
+    private async Task HandleDeleteRecord()
+    {
+        HttpResponseMessage response = await Http.DeleteAsync($"api/order/{Id}");
+        if (response.IsSuccessStatusCode)
+        {
+            @* confirmDelete = false; *@
+            navigationManager.NavigateTo("food/list");
+        }
+        else
+        {
+            errorString = response.ReasonPhrase;
+        }
+        
+        navigationManager.NavigateTo("food/list");
     }
 }
