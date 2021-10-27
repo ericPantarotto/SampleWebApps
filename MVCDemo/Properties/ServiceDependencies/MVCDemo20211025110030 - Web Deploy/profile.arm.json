@@ -21,7 +21,7 @@
     },
     "resourceName": {
       "type": "string",
-      "defaultValue": "APIDemoApp",
+      "defaultValue": "MVCDemo20211025110030",
       "metadata": {
         "description": "Name of the main resource to be created by this template."
       }

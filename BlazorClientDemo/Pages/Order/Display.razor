@@ -1,39 +1,40 @@
 ﻿@page "/Order/Display/{Id:int}"
-@inject IFoodData foodData
-@inject IOrderData orderData
+@inject HttpClient Http
 @inject NavigationManager navigationManager
-@using BlazorServerDemo.Models
-
 <h3>Display</h3>
-@if (recordNotFound)
+
+@if (string.IsNullOrWhiteSpace(errorString) == false)
 {
- <h4>No Record Found</h4>   
-}else if (order is null)
+    <h4>System Error</h4>
+    <p>@errorString</p>
+}
+else if (orderInfo.Order is null)
 {
- <h4>Record Loading...</h4>   
-}else
+    <h4>Loading...</h4>
+}
+else
 {
-    <table class="table">
+      <table class="table">
         <tbody>
             <tr>
                 <td><strong>Order Name</strong></td>
-                <td>@order.OrderName</td>
+                <td>@orderInfo.Order.OrderName</td>
             </tr>
             <tr>
                 <td><strong>Order Date</strong></td>
-                <td>@order.OrderDate</td>
+                <td>@orderInfo.Order.OrderDate</td>
             </tr>
             <tr>
                 <td><strong>Order Total</strong></td>
-                <td>@String.Format("{0:C}",order.Total)</td>
+                <td>@String.Format("{0:C}",orderInfo.Order.Total)</td>
             </tr>
             <tr>
                 <td><strong>Item Ordered</strong></td>
-                <td>@itemPurchased</td>
+                <td>@orderInfo.ItemPurchased</td>
             </tr>
             <tr>
                 <td><strong>Quantity</strong></td>
-                <td>@order.Quantity</td>
+                <td>@orderInfo.Order.Quantity</td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -70,40 +71,56 @@
     </EditForm>
 }
 
-
 @code {
     [Parameter]
     public int Id { get; set; }
-    private OrderModel order;
-    public string itemPurchased;
+    private OrderResultModel orderInfo = new OrderResultModel();
     private OrderUpdateModel updateModel = new OrderUpdateModel();
+    private string errorString; 
     private bool confirmDelete = false;
-    private bool recordNotFound;
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         base.OnInitialized();
-        order = orderData.GetOrderById(Id);
 
-        if (order is not null)
+        HttpResponseMessage response = await Http.GetAsync($"api/order/{Id}");
+        
+        if (response.IsSuccessStatusCode)
         {
-            itemPurchased = foodData.GetFoodById(order.FoodId)?.Title;
+            orderInfo= await response.Content.ReadFromJsonAsync<OrderResultModel>();    
 
-            updateModel.Id = order.Id;
-            updateModel.OrderName = order.OrderName;
+            updateModel.Id = orderInfo.Order.Id;
+            updateModel.OrderName = orderInfo.Order.OrderName;
         }else
         {
-            recordNotFound = true;
+            errorString = response.ReasonPhrase;
         }
     }
-    private void HandleValidSubmit()
+    private async Task HandleValidSubmit()
     {
-            order.OrderName = updateModel.OrderName;
-
-            orderData.UpdateOrderName(order); 
+       try
+       {
+            HttpResponseMessage response = await Http.PutAsJsonAsync($"api/order", updateModel);
+            orderInfo.Order.OrderName = updateModel.OrderName;
+       }
+       catch (Exception ex)
+       {
+           errorString = ex.Message;
+       }
     }
-    private void HandleDeleteRecord()
+
+    private async Task HandleDeleteRecord()
     {
-        orderData.DeleteOrder(Id); 
+        HttpResponseMessage response = await Http.DeleteAsync($"api/order/{Id}");
+        if (response.IsSuccessStatusCode)
+        {
+            @* confirmDelete = false; *@
+            navigationManager.NavigateTo("food/list");
+        }
+        else
+        {
+            errorString = response.ReasonPhrase;
+        }
+        
         navigationManager.NavigateTo("food/list");
     }
 }
