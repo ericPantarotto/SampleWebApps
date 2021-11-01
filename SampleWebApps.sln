@@ -15,13 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC", "MVC\MVC.csproj", "{B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RazorPages", "RazorPages\RazorPages.csproj", "{F5B36336-93BE-4131-A679-EFF6CDA061AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCDemo", "MVCDemo\MVCDemo.csproj", "{84732698-3AED-4288-8E4F-BF77B87F7CBD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCDemo", "MVCDemo\MVCDemo.csproj", "{84732698-3AED-4288-8E4F-BF77B87F7CBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIDemo", "APIDemo\APIDemo.csproj", "{C4AE3933-2C4C-42AD-B3C6-5E3F67B536E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIDemo", "APIDemo\APIDemo.csproj", "{C4AE3933-2C4C-42AD-B3C6-5E3F67B536E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerDemo", "BlazorServerDemo\BlazorServerDemo.csproj", "{41E7874C-43E5-4A47-B40F-D344B7776A3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServerDemo", "BlazorServerDemo\BlazorServerDemo.csproj", "{41E7874C-43E5-4A47-B40F-D344B7776A3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorClientDemo", "BlazorClientDemo\BlazorClientDemo.csproj", "{3236F57A-308C-4D59-A832-55B6CA0C310D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorClientDemo", "BlazorClientDemo\BlazorClientDemo.csproj", "{3236F57A-308C-4D59-A832-55B6CA0C310D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
