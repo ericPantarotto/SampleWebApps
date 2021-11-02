@@ -64,6 +64,41 @@ namespace APIDemo.Controllers
             }
         }
 
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public IActionResult Get()
+        {
+            List<OrderListModel> orderList = new List<OrderListModel>();
+            var food = _foodData.GetFood();
+            
+            var orders = _orderData.GetOrder();
+
+            orders
+            .Where(o => o.Total != 0).ToList()
+            .ForEach(item =>
+            {
+                orderList.Add(new OrderListModel
+                {
+                    Id = item.Id,
+                    OrderDate = item.OrderDate,
+                    OrderName = item.OrderName,
+                    Quantity = item.Quantity,
+                    Total = item.Total,
+                    FoodTitle = food.Where(f => f.Id == item.FoodId).First().Title
+                });
+            });
+
+            if (orderList.Count != 0)
+            {
+                return Ok(orderList);
+            }else
+            {
+                return NotFound();
+            }
+        }
+
 
         [HttpPut]
         [ValidateModel]
