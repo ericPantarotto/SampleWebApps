@@ -1,0 +1,92 @@
+﻿@page "/Order/List"
+@inject HttpClient Http
+@inject NavigationManager navigationManager
+<h3>List of Orders</h3>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Date</th>
+            <th>OrderName</th>
+            <th>Food</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>To Order</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Order)
+        {
+            <tr>
+                <td>@order.OrderDate</td>
+                <td>@order.OrderName</td>
+                <td>@order.FoodTitle</td>
+                <td>@order.Quantity</td>
+                <td>@order.Total.ToString("C")</td>
+               @* <td>
+                    <button class="btn btn-info" @onclick="(()=> View(order))">View</button>
+                </td>*@
+                <td colspan="2">
+                    @if (confirmView && orderConfirmView?.Id == order.Id)
+                    {
+                        <button class="btn btn-outline-info" @onclick="(()=> View(order))">
+                            Confirm
+                        </button>
+                        <button class="btn btn-secondary" @onclick="(() => confirmView = false)">
+                            Cancel
+                        </button>
+                    }else
+                    {
+                        <button class="btn alert-info" @onclick="(() => 
+                            {
+                                confirmView = true;
+                                confirmSingleView(order);
+                            })">
+                            View
+                        </button>
+                    } 
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<FoodModel> Food { get; set; } = new List<FoodModel>();
+    public List<OrderListModel> Order { get; set; }= new List<OrderListModel>();
+    private bool confirmView = false;
+    private string errorString; 
+    public OrderCreateResultModel orderConfirmView {get; set;}
+
+    protected override async Task OnInitializedAsync()
+    {
+        base.OnInitialized();
+
+        HttpResponseMessage response = await Http.GetAsync($"api/food");
+
+        if (response.IsSuccessStatusCode)
+        {
+            Food = await response.Content.ReadFromJsonAsync<List<FoodModel>>();    
+        }else
+        {
+            errorString = response.ReasonPhrase;
+        }
+
+        response = await Http.GetAsync($"api/order");
+
+        if (response.IsSuccessStatusCode)
+        {
+            Order = await response.Content.ReadFromJsonAsync<List<OrderListModel>>();    
+        }else
+        {
+            errorString = response.ReasonPhrase;
+        }
+    }
+
+    private void View(OrderListModel order)=> navigationManager.NavigateTo($"order/display/{order.Id}");
+
+    private void confirmSingleView(OrderListModel order)
+    {
+        orderConfirmView = new();
+        orderConfirmView.Id = order.Id;
+    }
+}
