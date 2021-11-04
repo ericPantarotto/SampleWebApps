@@ -1,0 +1,7 @@
+{
+    "cSpell.enableFiletypes": [
+        "aspnetcorerazor"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/de8d5bad-a2f6-4bde-9734-35cd6b67a985/resourceGroups/MVCDemoApp/providers/Microsoft.Web/sites/BlazorClientDemoECR",
+    "appService.deploySubpath": "BlazorClientDemo\\publish"
+}

@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using DataLibraryRepo.Data;
 using DataLibraryRepo.Models;
 using Microsoft.AspNetCore.Mvc;
@@ -14,7 +16,7 @@ namespace MVCDemo.Controllers
         private readonly IOrderData _orderData;
         private readonly IOrderCreateModel _orderCreateModel;
         private readonly IOrderDisplayModel _orderDisplayModel;
-
+        public List<OrderListModel> Order { get; set; }= new List<OrderListModel>();
         public OrdersController(IFoodData foodData,
                                 IOrderData orderData,
                                 IOrderCreateModel orderCreateModel,
@@ -26,9 +28,27 @@ namespace MVCDemo.Controllers
             _orderDisplayModel = orderDisplayModel;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            var food = _foodData.GetFood();
+            
+            var orders = _orderData.GetOrder();
+            orders
+            .Where(o => o.Total != 0).ToList()
+            .ForEach(item =>
+            {
+                Order.Add(new OrderListModel
+                {
+                    Id = item.Id,
+                    OrderDate = item.OrderDate,
+                    OrderName = item.OrderName,
+                    Quantity = item.Quantity,
+                    Total = item.Total,
+                    FoodTitle = food.Where(f => f.Id == item.FoodId).First().Title
+                });
+            });
+            return View(Order);
         }
 
         [HttpGet]

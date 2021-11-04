@@ -1,0 +1,85 @@
+﻿@page "/Order/List"
+@inject IFoodData foodData
+@inject IOrderData orderData
+@inject NavigationManager NavigationManager
+
+<h3>List of Orders</h3>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Date</th>
+            <th>OrderName</th>
+            <th>Food</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>To Order</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Order)
+        {
+            <tr>
+                <td>@order.OrderDate</td>
+                <td>@order.OrderName</td>
+                <td>@order.FoodTitle</td>
+                <td>@order.Quantity</td>
+                <td>@order.Total.ToString("C")</td>
+               @* <td>
+                    <button class="btn btn-info" @onclick="(()=> View(order))">View</button>
+                </td>*@
+                <td colspan="2">
+                    @if (confirmView)
+                    {
+                        <button class="btn btn-outline-info" @onclick="(()=> View(order))">
+                            View
+                        </button>
+                        <button class="btn btn-secondary" @onclick="(() => confirmView = false)">
+                            Cancel
+                        </button>
+                    }else
+                    {
+                        <button class="btn alert-info" @onclick="(() => confirmView = true)">
+                            Confirm View Order
+                        </button>
+                    } 
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+
+    private IFoodData _foodData;
+    private IOrderData _orderData;
+    public List<OrderListModel> Order { get; set; }= new List<OrderListModel>();
+    private bool confirmView = false;
+
+    protected override void OnInitialized()
+    {
+        _foodData = foodData;
+        _orderData = orderData;
+
+        var food = _foodData.GetFood();
+
+        var orders = _orderData.GetOrder();
+
+        orders
+        .Where(o => o.Total != 0).ToList()
+        .ForEach(item =>
+        {
+            Order.Add(new OrderListModel
+            {
+                Id = item.Id,
+                OrderDate = item.OrderDate,
+                OrderName = item.OrderName,
+                Quantity = item.Quantity,
+                Total = item.Total,
+                FoodTitle = food.Where(f => f.Id == item.FoodId).First().Title
+            });
+        });
+    }
+
+    private void View(OrderListModel order)=> NavigationManager.NavigateTo($"order/display/{order.Id}");
+
+}
